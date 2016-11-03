@@ -56,7 +56,7 @@ def main():
     rootModulo = 3
 
     print "Shared prime number: \t" + str(prime)
-    print "Base:\t" + str(rootModulo)
+    print "Base:\t\t\t" + str(rootModulo)
     print ""
 
     alice = DH(name="Alice", prime=prime, base=rootModulo)
@@ -70,7 +70,7 @@ def main():
     bob.sharedKey(publicKey=alice.publicKey, prime=prime)
     print ""
     
-    print "Eve, a adversary, has been eavesdropping, here's what she knows  :"
+    print "Eve, a adversary, has been eavesdropping, here's what she knows:"
     print "Prime:\t\t\t" + str(prime)
     print "Base:\t\t\t" + str(rootModulo)
     print "Alice's public key:\t" + str(alice.publicKey)
